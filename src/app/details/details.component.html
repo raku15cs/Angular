@@ -1,0 +1,31 @@
+<div style="margin-top: 80px;">
+
+<p>Select the Date to book the Room</p>
+
+  <form  #DateInfo="ngForm" >
+    <label for="checkin">Check In</label>
+    <input class="form-input" type="date" 
+    (change)="CheckIn()"
+    [(ngModel)]="checkinDate"
+     name="checkInDate"
+     id="checkin" 
+    [min]="currentDate"
+    required> 
+
+
+    <label for="checkout">Check Out</label>
+    <input type="date" class="form-input"
+     name="checkOutDate" 
+     id="checkout" 
+    [(ngModel)]="checkOutDate"
+    [min]="checkinDate"
+    required>
+
+
+    <label for="guest">Guest</label>
+    <input class="form-input" type="number" name="GuestNumber" id="guest" value="1" required min="1">
+    <button class="form-button" type="submit"
+    (click)="Submit()" [disabled]="!DateInfo.valid"><b>Submit</b></button>
+  </form>
+
+</div>

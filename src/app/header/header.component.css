@@ -1,0 +1,38 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    margin-top: 0px;
+    background-color: aqua;
+    align-items:center !important;
+    margin-right: 10px;
+    justify-content: space-between;
+   
+
+    position: fixed;
+    height: 50px;
+   width: 100%;
+    top: 0px;
+
+    
+}
+
+.header h3 {
+    
+    margin: 0px;
+    padding: 5px;
+  
+  }
+
+
+  .hotelBtn{
+  border-radius: 5px;
+   padding: 5px;
+  }
+
+  a{
+    text-decoration: none;
+    padding: 10px;
+  }
